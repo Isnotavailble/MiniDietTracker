@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DietTrackerTrain</string>
+    <string name="enter_food_name">Enter Food Name</string>
+    <string name="enter_calories">Enter Calories\n</string>
+    <string name="enter_category">Enter Category\n</string>
+    <string name="enter_fiber">Enter Fiber\n</string>
+    <string name="enter_proteins">Enter Proteins</string>
+    <string name="submit">Submit</string>
+</resources>

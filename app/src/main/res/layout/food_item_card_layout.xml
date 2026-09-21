@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="12dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/foodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="@color/gray"
+                android:paddingStart="12dp"
+                android:textStyle="bold"
+                tools:text="Mango"/>
+            <TextView
+                android:id="@+id/foodCalories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/subtext"
+                android:paddingStart="12dp"
+                android:textStyle="normal"
+                tools:text="Calories : 1200"/>
+            <TextView
+                android:id="@+id/foodFiber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/subtext"
+                android:paddingStart="12dp"
+                android:textStyle="normal"
+                tools:text="Fibres : 12"/>
+            <TextView
+                android:id="@+id/foodProteins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/subtext"
+                android:paddingStart="12dp"
+                android:textStyle="normal"
+                tools:text="Proteins : 23"/>
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
