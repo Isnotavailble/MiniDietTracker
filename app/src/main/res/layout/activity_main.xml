@@ -17,7 +17,7 @@
         app:cardElevation="12dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="12dp"
             android:orientation="vertical"
             >
@@ -28,35 +28,39 @@
                 android:textStyle="bold"
                 android:textColor="@color/purple_700"
                 android:textAlignment="center"
-                android:text="Food Entity Creation"
+                android:hint="Food Entity Creation"
                 android:layout_marginBottom="18dp" />
             <EditText
+                android:id="@+id/f_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:text="Enter Food Name"
+                android:hint="Enter Food Name"
                 android:textSize="16sp"
                 android:backgroundTint="@color/black"
                 />
             <EditText
+                android:id="@+id/f_category"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:text="Enter cateogry"
+                android:hint="Enter cateogry"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
             <EditText
+                android:id="@+id/f_calories"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:text="Enter calories"
+                android:hint="Enter calories"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
             <EditText
+                android:id="@+id/f_fibres"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:text="Enter fibres"
+                android:hint="Enter fibres"
                 android:textColor="@color/black"
                 android:textSize="16sp"/>
             <LinearLayout
@@ -64,7 +68,7 @@
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
                 android:gravity="center"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
                 <Button
                     android:id="@+id/submitBtn"
                     app:layout_constraintStart_toStartOf="@+id/buttonContainer"
