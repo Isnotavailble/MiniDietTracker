@@ -5,126 +5,95 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
-    <LinearLayout
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <androidx.cardview.widget.CardView
+        app:cardElevation="6dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:cardElevation="4dp"
-            android:layout_margin="12dp"
-            app:cardCornerRadius="10dp"
-            app:layout_constraintStart_toStartOf="parent">
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/images"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Food Creation Form"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/i_name"
+                android:hint="Enter Food Name"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/gray"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/i_category"
+                android:hint="Enter Category Name"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/i_calories"
+                android:hint="Enter Calories"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/gray"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/i_fibres"
+                android:hint="Enter Fibres"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/gray"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="12dp"
-                android:paddingRight="12dp"
-                android:focusable="true"
-                >
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
-                    android:padding="6dp"
-                    android:textAlignment="center"
-                    android:textSize="23sp"
-                    android:textColor="@color/gray"
-                    android:textStyle="bold"
-                    android:text="Create Food"
-                    />
-
-                <EditText
-                    android:id="@+id/foodNameIn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/enter_food_name"
-                    android:textSize="18sp"
-                    android:inputType="text"
-                    android:padding="12dp"
-                    android:paddingBottom="30dp"
-                    android:layout_marginTop="12dp"
-                    android:backgroundTint="@color/editBackGroundColor"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/material_dynamic_neutral60"
-                    />
-                <EditText
-                    android:id="@+id/foodCategoryIn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:hint="@string/enter_category"
-                    android:textSize="18sp"
-                    android:paddingBottom="30dp"
-                    android:inputType="text"
-                    android:padding="12dp"
-                    android:backgroundTint="@color/editBackGroundColor"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/material_dynamic_neutral60"
-                    />
-                <EditText
-                    android:id="@+id/foodCaloriesIn"
-                    android:layout_marginTop="12dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/enter_calories"
-                    android:textSize="18sp"
-                    android:textStyle="normal"
-                    android:inputType="number"
-                    android:padding="12dp"
-                    android:backgroundTint="@color/editBackGroundColor"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/material_dynamic_neutral60"
-                    />
-                <EditText
-                    android:id="@+id/foodFiberIn"
-                    android:layout_marginTop="12dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/enter_fiber"
-                    android:textSize="18sp"
-                    android:textStyle="normal"
-                    android:inputType="number"
-                    android:padding="12dp"
-                    android:backgroundTint="@color/editBackGroundColor"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/material_dynamic_neutral60"
-                    />
-                <EditText
-                    android:id="@+id/foodProteinsIn"
-                    android:layout_marginTop="12dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/enter_proteins"
-                    android:textSize="18sp"
-                    android:textStyle="normal"
-                    android:inputType="number"
-                    android:padding="12dp"
-                    android:backgroundTint="@color/editBackGroundColor"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/material_dynamic_neutral60"
-                    />
-
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
                 <Button
                     android:id="@+id/submitBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/submit"
-                    android:textColor="@color/white"/>
+                    android:text="Submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
                 <Button
-                    android:id="@+id/navToListBtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Go to List View"
-                    android:backgroundTint="@color/nonSubmitBtnColor"
-                    />
+                    android:id="@+id/navBtn"
+                    android:layout_marginStart="6dp"
+                    android:text="go to List"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
