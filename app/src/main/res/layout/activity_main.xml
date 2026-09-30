@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="12dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/images"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Food Creation Form"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:layout_marginTop="12dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/i_name"
+                android:hint="Enter Food Name"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/gray"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/i_category"
+                android:hint="Enter Category Name"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/i_calories"
+                android:hint="Enter Calories"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/gray"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/i_fibres"
+                android:hint="Enter Fibres"
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/gray"
+                android:layout_marginBottom="6dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/submitBtn"
+                    android:text="Submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/navBtn"
+                    android:layout_marginStart="6dp"
+                    android:text="go to List"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
